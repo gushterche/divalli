@@ -1,0 +1,8 @@
+nav {
+	display: block;
+	width: 70%;
+	margin: 20px auto;
+}
+nav ul {margin: 0;padding: 0;overflow: hidden;}
+nav ul li {display: block;list-style: none outside; float:left; width:160px;text-align: center;}
+nav ul li a{text-decoration: none;color: grey;}
