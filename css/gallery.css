@@ -1,10 +1,14 @@
-#gallery ul {margin: 0;padding:0;}
+#gallery ul {list-style-type: none;margin: 0 auto;padding:0;width: 90%}
+/*#gallery ul:after {display: block; content: ''; height: 1px; clear: both; margin-top: 10px;}*/
 #gallery ul li {display: block;}
 
 
-#gallery ul  {overflow: hidden;}
-#gallery ul li {float: left;margin: 5px;}
-#gallery ul li a {display: block;padding:5px;border:1px solid black;background: #fff;}
-#gallery ul li a img {display: block;width: auto;height: 100px;}
+#gallery ul  {overflow: hidden;position: relative;}
+#gallery ul li {float: left;width: auto;height: 120px;margin: 10px 5px;}
+#gallery ul li a {display: block;width: auto; height: 100%;}
+#gallery ul li a img {display: block;width:auto;height: 97%;padding:5px;border:1px solid black;background: #fff;box-shadow: 5px 5px 10px grey;}
 
-#gallery ul li a:hover {border:1px solid red;}
+#gallery ul li:hover a {border: none;box-shadow: none;height: 400px;width:auto;position: absolute;top: 10%;left: 20%; z-index: 9000;}
+
+#gallery ul li:hover a  img {border:50px solid white;height: 100%;width: auto;}
+

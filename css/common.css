@@ -9,6 +9,18 @@ body {
 	color:grey;
 }
 
+body p.gohome {
+	width: 95%;
+	text-align: right;
+	margin: 10px;
+	z-index: 1000;
+}
+
+body p.gohome a {
+	text-decoration: none;
+	color: inherit;
+}
+
 body header { 
 	width:100%;
 	margin: 20px 0;
@@ -28,22 +40,127 @@ body header p {
 	text-align: center;
 }
 
+body section#review img {
+	width: 100%;
+	height: auto;
+}
+
 body section#aboutus {
 	width:100%;
+	height: 100vh;
+	overflow: hidden;
 }
 
-body section#aboutus img {
-	width: 100%;
-	height: 400px;
+body section#aboutus .contact, body section#aboutus .aboutus  {
+	width: 35%;
+	height: 80%;
+	float: left;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border: 1px solid grey;
+
+
 }
 
-body section#aboutus h1, body section#aboutus p {
+body  .contact {
+	margin-left: 15%;
+
+
+
+}
+
+body .contact h1, body  .contact h2, body  .contact p {
 	display: block;
 	width: 60%;
 	text-align: center;
-	margin: 40px auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body .contact h1 {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+ body .contact h2 {
+ 	font-size: 1.2em;
+ }
+
+  body .contact button {
+  	display: block;
+  	width: 60%;
+  	height: 30px;
+  	color: white;
+  	background-color: grey;
+  	margin: 20px auto;
+  	text-align: center;
+  	border: none;
+  	-webkit-appearance:none;
+  }
+
+   body .contact button:hover {
+   	color: grey;
+   	border: 1px solid grey;
+   	background-color: inherit;
+   }
+
+  body .contact button a{
+  	text-decoration: none;
+  	color: inherit;
+  }
+
+
+
+
+ body section#aboutus .aboutus h1, body section#aboutus .aboutus p {
+	display: block;
+	width: 80%;
+	text-align: center;
+	
+}
+
+body section#aboutus .aboutus h1 {
+	margin: 40px auto 20px auto;
+}
+
+body section#aboutus .aboutus p {
+	margin: 0 auto;
 }
 
 body section#menu img {
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
+
+body section#gallery {
+	width: 85%;
+	height: 100vh;
+	margin: 5px auto;
+	z-index: 5000;
+}
+
+body section#gallery h1 {
+	text-align: center;
+	margin: 20px;
+}
+
+body #contact {
+	width: 100%;
+	height: 100vh;
+	padding: 40px;
+	overflow: hidden;
+}
+
+
+body #map_canvas, body #contact .contact {
+	width: 400px;
+	height: 500px;
+	border: 1px solid grey;
+}
+
+body #contact .contact{
+		float: left;
+}
+
+
